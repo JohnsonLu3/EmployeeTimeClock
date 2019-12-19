@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime&display=swap');
+
+.clock {
+    font-size: 5rem;
+    color: white;
+    font-family: 'Courier Prime', monospace;
+    
+
+    .clock-info{
+        padding: 1rem;
+        border: solid 2px white;
+        border-radius: 4px;
+    }
+
+    .date {
+        font-size: 1.5rem;
+    }
+}

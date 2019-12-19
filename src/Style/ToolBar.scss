@@ -1,0 +1,25 @@
+#timeclock-toolbar {
+
+    .container {
+        background-color: white;
+        padding: 2px;
+        border-radius: 4px;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    ul li {
+        display: inline;
+        padding: 5px;
+        list-style: none;
+    }
+
+    button{
+        background-color: rgba(0, 0, 0, 0.00);
+        border: none;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,24 @@
+#mainBody {
+    padding: .5rem;
+}
+
+.flex-container {
+    flex: 1;
+    margin: 5px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
