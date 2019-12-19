@@ -4,6 +4,7 @@ import "../Style/Main.scss"
 import Clock from './Clock'
 import ToolBar from './ToolBar'
 import ClockedInList from './ClockedInList'
+import ClockedOutList from './ClockedOutList'
 
 function Main() {
     return (
@@ -13,7 +14,8 @@ function Main() {
                 <div className="flex-container">
                     <div>
                         <ToolBar />
-                        <ClockedInList/>
+                        <ClockedInList />
+                        <ClockedOutList />
                     </div>
                 </div>
                 <div className="flex-container"><Clock /></div>
