@@ -18,3 +18,7 @@ code {
     top: -111111px;
     left: -111111px;
 }
+
+button:hover{
+    cursor: pointer;
+}

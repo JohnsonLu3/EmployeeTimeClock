@@ -1,5 +1,7 @@
 import React from 'react'
 import "../Style/ClockedInList.scss"
+import EmployeeListItem from "./EmployeeListItem"
+
 export default class ClockedOut extends React.Component {
 
     constructor(props) {
@@ -22,10 +24,11 @@ export default class ClockedOut extends React.Component {
                 <div className="container">
                     <h2>Clocked Out</h2>
                     <ul>
-                        <li>sadasdasd</li>
-                        <li>asdasdasd</li>
-                        <li>sadasdasd</li>
-                        <li>asdasdasd</li>
+                        <EmployeeListItem clockedIn = {false}/>
+                        <EmployeeListItem clockedIn = {false}/>
+                        <EmployeeListItem clockedIn = {false}/>
+                        <EmployeeListItem clockedIn = {false}/>
+                        <EmployeeListItem clockedIn = {false}/>
                     </ul>
                 </div>
             </div>
