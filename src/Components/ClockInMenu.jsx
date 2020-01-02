@@ -1,6 +1,6 @@
 import React from 'react'
-import "../Style/ClockedInList.scss"
-import EmployeeListItem from "./EmployeeListItem"
+import "../Style/Menu/ClockedInMenu.scss"
+import EmployeeListItem from "./Menu/EmployeeMenuItem"
 
 export default class ClockInMenu extends React.Component {
 
@@ -20,9 +20,9 @@ export default class ClockInMenu extends React.Component {
 
     render() {
         return (
-            <div id="ClockedInList">
+            <div id="ClockedInMenu">
                 <div className="container">
-                    <h2>Clocked In</h2>
+                    <h2>Clocked In - Edit</h2>
                     <ul>
                         <EmployeeListItem clockedIn = {true}/>
                         <EmployeeListItem clockedIn = {true}/>

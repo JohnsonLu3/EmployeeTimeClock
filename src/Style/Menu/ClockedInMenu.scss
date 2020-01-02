@@ -1,0 +1,42 @@
+#ClockedInMenu{
+    background: white;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin:0;
+
+    overflow-y: auto;
+
+    h2{
+        padding: .5rem 1rem;
+    }
+    .container{
+    }
+
+    ul{
+        list-style: none;
+        padding-left: 0;
+
+        li{
+            padding-bottom: .5rem;
+        }
+    }
+
+    .employeeMenuItem{
+        padding: .5rem 1rem;
+
+        .employeeName{
+            padding-right: .5rem;
+            font-weight: 600;
+        }
+    }
+
+    .employeeMenuItem:nth-child(odd){
+        background-color: rgb(240, 240, 240);
+    }
+
+    .clockedInTotal{
+        font-style: italic;
+        font-size: 11px;
+    }
+}

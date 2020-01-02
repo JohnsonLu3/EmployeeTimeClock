@@ -20,7 +20,7 @@ function createClockinMenu(){
   clockInWindow = new BrowserWindow({width: 500, height: 500, show: true, parent: mainWindow});
   clockInWindow.loadURL('http://localhost:3000/ClockInMenu');
   clockInWindow.setMenu(null);
-  clockInWindow.setTitle("");
+  clockInWindow.setTitle("Clock In - Edit");
 }
 
 app.on('ready', function(){
