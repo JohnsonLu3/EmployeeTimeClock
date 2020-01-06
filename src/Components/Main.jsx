@@ -6,6 +6,7 @@ import ToolBar from './ToolBar'
 import ClockedInList from './ClockedInList'
 import ClockedOutList from './ClockedOutList'
 import Calendar from 'react-calendar';
+import TestData from '../Test/createTestData'
 
 class Main extends React.Component {
     
@@ -18,6 +19,7 @@ class Main extends React.Component {
     render(){
         return (
             <main className="Main">
+                {this.testData()}
                 <h1 className="sr">Home Screen</h1>
                 <div id="mainBody" className="flex-column">
                     <div className="flex-container">
@@ -39,6 +41,10 @@ class Main extends React.Component {
                 </div>
             </main>
         );
+    }
+
+    testData(){
+        TestData();
     }
 }
 

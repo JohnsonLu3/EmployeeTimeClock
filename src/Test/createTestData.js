@@ -2,6 +2,8 @@ import Employee from '../Model/Employee'
 import Admins from '../Model/Admin'
 import Crypto from 'crypto'
 
+const fs = require('fs');
+
 const dataFilePath = '%PUBLIC_URL%/data.dat'
 const employeesToCreate = 5;
 const adminsToCreate = 2;
@@ -9,6 +11,9 @@ const adminsToCreate = 2;
 let employees = []
 let admins = []
 
+export default function createTestData(){
+    createNewUsers();
+}
 
 function createNewUsers(){
     createTestEmployees();
@@ -18,15 +23,15 @@ function createNewUsers(){
         'Employees' : employees,
         'Admins' : admins
     }
-
+    console.log(json);
     writeData(json);
 }
 
-function writeData(JSON){
-    const fs = require('fs');
-
-    try { fs.writeFileSync(dataFilePath, JSON, 'utf-8'); }
-    catch(e) { alert('Failed to save the file !'); }
+function writeData(json){
+    let data = Buffer.from(JSON.stringify(json), 'utf8').toString('hex');
+    console.log(data);
+    try { fs.writeFileSync(dataFilePath, data, 'utf-8'); }
+    catch(e) { alert('Failed to save the file !\n' + e  + "\n" + dataFilePath); }
 }
 
 function createTestEmployees(){
