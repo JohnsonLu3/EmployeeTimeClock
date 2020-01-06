@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Style/EmployeeListItem.scss"
+import ClockedInEditWindow from '../Windows/ClockInEditWindow'
 
 export default class EmployeeListItem extends React.Component{
 
@@ -23,7 +24,7 @@ export default class EmployeeListItem extends React.Component{
                     <span>Employee Name</span>
                     <span className="buttonContainer">
                         {this.getButton()}
-                        <button>Edit</button>
+                        
                     </span>
                 </span>
             </li>
@@ -33,12 +34,23 @@ export default class EmployeeListItem extends React.Component{
     getButton(){
         if(this.props.clockedIn){
             return(
-                <button>Clock In</button>
+                <span>
+                    <button>Clock In</button>
+                    <button onClick={this.showClockedInEditWindow}>Edit</button>
+                </span>
             )
         }else{
             return(
-                <button>Clock Out</button>
+                <span>
+                    <button>Clock Out</button>
+                    <button>Edit</button>
+                </span>
             )
         }
+    }
+
+    showClockedInEditWindow(){
+        let window = new ClockedInEditWindow();
+        window.createWindow();
     }
 }
